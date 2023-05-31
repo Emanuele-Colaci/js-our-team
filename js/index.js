@@ -1,10 +1,12 @@
+let stampa = document.getElementById('stampa');
+
 //ARRAY OGGETTI
 let informazioneTeam = [
     {
         'name' : 'Wayne Barnett',
         'role' : 'Founder & CEO',
         'image' : 'wayne-barnett-founder-ceo.jpg'
-    },
+    },  
     {
         'name' : 'Angela Caroll',
         'role' : 'Chief Editor',
@@ -32,9 +34,8 @@ let informazioneTeam = [
     }
 ];
 
+//CICLO FOR IN
 for(let index in informazioneTeam){
     let persona = informazioneTeam[index];
-    console.log('name: ' + persona.name);
-    console.log('role: ' + persona.role);
-    console.log('image: ' + persona.image);
+    stampa.innerHTML += `${persona.name + ' '} ${persona.role + ' '} ${persona.image + ' '} <br>`;
 }
