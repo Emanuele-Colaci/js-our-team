@@ -1,4 +1,5 @@
 let stampa = document.getElementById('stampa');
+let paragrafo = document.getElementById('paragrafo');
 
 //ARRAY OGGETTI
 let informazioneTeam = [
@@ -37,5 +38,10 @@ let informazioneTeam = [
 //CICLO FOR IN
 for(let index in informazioneTeam){
     let persona = informazioneTeam[index];
-    stampa.innerHTML += `${persona.name + ' '} ${persona.role + ' '} ${persona.image + ' '} <br>`;
+    stampa.innerHTML += `
+    <div class="border">
+    <img src="./img/${persona.image + ' '}"> 
+    <p>${persona.name + ' '}</p> 
+    <p>${persona.role + ' '}</p>
+    </div> <br>`;
 }
