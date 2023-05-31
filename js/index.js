@@ -32,4 +32,9 @@ let informazioneTeam = [
     }
 ];
 
-console.log(informazioneTeam);
+for(let index in informazioneTeam){
+    let persona = informazioneTeam[index];
+    console.log('name: ' + persona.name);
+    console.log('role: ' + persona.role);
+    console.log('image: ' + persona.image);
+}
