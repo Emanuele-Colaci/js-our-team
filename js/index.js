@@ -41,7 +41,7 @@ for(let index in informazioneTeam){
     stampa.innerHTML += `
     <div class="border">
     <img src="./img/${persona.image + ' '}"> 
-    <p>${persona.name + ' '}</p> 
+    <p><strong>${persona.name + ' '}</strong></p> 
     <p>${persona.role + ' '}</p>
     </div> <br>`;
 }
